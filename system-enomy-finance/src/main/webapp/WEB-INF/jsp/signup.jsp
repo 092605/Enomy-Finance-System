@@ -35,6 +35,14 @@
                                 Start using smart tools for currency conversion, savings planning, and investment tracking.
                             </p>
                         </div>
+                        
+                        <!-- FORM METHOD  -->
+                        
+                        <c:if test="${not empty error}">
+						    <div class="alert alert-danger">
+						        ${error}
+						    </div>
+						</c:if>
 
                         <form method="post" action="/signup" class="auth-form">
                             <div class="mb-3">
@@ -56,6 +64,9 @@
                                 Sign Up
                             </button>
                         </form>
+                        
+                        
+                        
 
                         <div class="auth-footer text-center">
                             <p class="mb-0">

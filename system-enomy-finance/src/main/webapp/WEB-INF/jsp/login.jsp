@@ -35,6 +35,15 @@
                                 Access your Enomy Finance tools and continue managing your finances smarter.
                             </p>
                         </div>
+                        
+                        
+                        <!-- FORM METHOD -->
+                        
+                        <c:if test="${not empty success}">
+						    <div class="alert alert-success" role="alert">
+						        ${success}
+						    </div>
+						</c:if>
 
                         <form method="post" action="/login" class="auth-form">
                             <div class="mb-3">
