@@ -125,6 +125,78 @@
 </section>
 
 
+<!-- OUR FINANCIAL TOOLS SECTION -->
+<section class="financial-tools-section py-5" id="tools">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="tools-title">Our Financial Tools</h2>
+            <p class="tools-subtitle">
+                Explore our smart tools designed to help you manage your finances with ease.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Currency Converter -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tool-card h-100">
+                    <div class="tool-image-wrapper">
+                        <img src="/images/currency-converter.png"
+                             alt="Currency Converter"
+                             class="img-fluid tool-image">
+                    </div>
+                    <div class="tool-card-body">
+                        <h5 class="tool-card-title">Currency Converter</h5>
+                        <p class="tool-card-text">
+                            Convert currencies using real-time rates and quickly estimate
+                            exchange values for different currencies.
+                        </p>
+                        <a href="/currency-converter" class="btn tool-btn">Try Tool</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Savings Planner -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tool-card h-100">
+                    <div class="tool-image-wrapper">
+                        <img src="/images/savings-planner.png"
+                             alt="Savings Planner"
+                             class="img-fluid tool-image">
+                    </div>
+                    <div class="tool-card-body">
+                        <h5 class="tool-card-title">Savings Planner</h5>
+                        <p class="tool-card-text">
+                            Calculate savings goals and create simple plans to help
+                            you stay on track with your financial targets.
+                        </p>
+                        <a href="/savings-planner" class="btn tool-btn">Try Tool</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Projection -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tool-card h-100">
+                    <div class="tool-image-wrapper">
+                        <img src="/images/investment-projection.png"
+                             alt="Investment Projection"
+                             class="img-fluid tool-image">
+                    </div>
+                    <div class="tool-card-body">
+                        <h5 class="tool-card-title">Investment Projection</h5>
+                        <p class="tool-card-text">
+                            See projected growth of your investments and understand
+                            possible returns over time.
+                        </p>
+                        <a href="/investment-projection" class="btn tool-btn">Try Tool</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 
