@@ -26,71 +26,38 @@
 <jsp:include page="/WEB-INF/jsp/component/navbar.jsp"/>
 
 
-
-
-<!-- Wrapper Hero + About -->
-<div class="landing-flow-wrapper">
-
-    <div class="flow-lottie-bg">
-        <lottie-player
-            src="/animations/Technology-Network.json"
-            background="transparent"
-            speed="0.7"
-            loop
-            autoplay>
-        </lottie-player>
-    </div>
-
-
 <!-- HERO SECTION -->
-<section class="hero-section container py-5">
+<section class="section hero">
 
-    <div class="row align-items-center">
-
-        <!-- Left Content -->
-        <div class="col-lg-6">
-
-            <h1 class="hero-title">
-                Smart Finance Tools for <br>
-                Currency and Savings
-            </h1>
-
-            <p class="hero-subtitle mt-3">
-                Convert currencies, plan investments, and track your
-                financial growth easily with Enomy Finance.
-            </p>
-
-            <div class="hero-buttons mt-4">
-
-                <a href="/landing-converter" class="btn btn-glow me-3">
-                    Try Currency Converter
-                </a>
-
-                <a href="/login" class="btn btn-outline-light">
-                    Sign Up
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- Right Image -->
-        <div class="col-lg-6 hero-left">
-
-		    <!-- Background Lottie Animation -->
-		    <div class="hero-lottie-right">
-		        <lottie-player
-		            src="/animations/isometric-data-analysis.json"
-		            background="transparent"
-		            speed="0.7"
-		            loop
-		            autoplay>
-		        </lottie-player>
-		</div>
-
-    </div>
+	<div class="container">
+	
+		<div class="row align-items-center">
+		
+			<div class="col-lg-6">
+			
+				<h1>Manage Your Finances Smarter</h1>
+				
+				<p class="text-muted">
+				Currency conversion, investment planning, and financial insights all in one platform.
+				</p>
+				
+				<a class="btn btn-main me-3">Get Started</a>
+				<a class="btn btn-outline-light">Learn More</a>
+				
+			</div>
+		
+			<div class="col-lg-6 text-center">
+			
+				<img src="/images/finance-dashboard.png" class="img-fluid">
+			
+			</div>
+			
+			</div>
+	
+	</div>
 
 </section>
+
 
 
 
@@ -156,62 +123,80 @@
     </div>
 
 </section>
-</div>
 
 
-<!-- FINANCIAL TOOLS SECTION -->
-<section class="financial-tools-section" id="tools">
+<!-- OUR FINANCIAL TOOLS SECTION -->
+<section class="financial-tools-section py-5" id="tools">
     <div class="container">
-        
         <div class="text-center mb-5">
-            <h2 class="section-title">Our Financial Tools</h2>
-            <p class="section-subtitle">
+            <h2 class="tools-title">Our Financial Tools</h2>
+            <p class="tools-subtitle">
                 Explore our smart tools designed to help you manage your finances with ease.
             </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
 
-            <div class="col-md-6 col-lg-4">
-                <div class="tool-card">
-                    <img src="/images/Currency Converter.png" alt="Currency Converter">
-                    <h4>Currency Converter</h4>
-                    <p>
-                        Convert currencies using real-time rates and quickly estimate exchange
-                        values for different currencies.
-                    </p>
-                    <a href="#" class="tool-btn">Try Tool</a>
+            <!-- Currency Converter -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tool-card h-100">
+                    <div class="tool-image-wrapper">
+                        <img src="/images/currency-converter.png"
+                             alt="Currency Converter"
+                             class="img-fluid tool-image">
+                    </div>
+                    <div class="tool-card-body">
+                        <h5 class="tool-card-title">Currency Converter</h5>
+                        <p class="tool-card-text">
+                            Convert currencies using real-time rates and quickly estimate
+                            exchange values for different currencies.
+                        </p>
+                        <a href="/currency-converter" class="btn tool-btn">Try Tool</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="tool-card">
-                    <img src="/images/Savings Planner.png" alt="Savings Planner">
-                    <h4>Savings Planner</h4>
-                    <p>
-                        Calculate savings goals and create simple plans to help you stay on
-                        track with your financial targets.
-                    </p>
-                    <a href="#" class="tool-btn">Try Tool</a>
+            <!-- Savings Planner -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tool-card h-100">
+                    <div class="tool-image-wrapper">
+                        <img src="/images/savings-planner.png"
+                             alt="Savings Planner"
+                             class="img-fluid tool-image">
+                    </div>
+                    <div class="tool-card-body">
+                        <h5 class="tool-card-title">Savings Planner</h5>
+                        <p class="tool-card-text">
+                            Calculate savings goals and create simple plans to help
+                            you stay on track with your financial targets.
+                        </p>
+                        <a href="/savings-planner" class="btn tool-btn">Try Tool</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="tool-card">
-                    <img src="/images/Investment Projection.png" alt="Investment Projection">
-                    <h4>Investment Projection</h4>
-                    <p>
-                        See projected growth of your investments and understand possible returns
-                        over time.
-                    </p>
-                    <a href="#" class="tool-btn">Try Tool</a>
+            <!-- Investment Projection -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tool-card h-100">
+                    <div class="tool-image-wrapper">
+                        <img src="/images/investment-projection.png"
+                             alt="Investment Projection"
+                             class="img-fluid tool-image">
+                    </div>
+                    <div class="tool-card-body">
+                        <h5 class="tool-card-title">Investment Projection</h5>
+                        <p class="tool-card-text">
+                            See projected growth of your investments and understand
+                            possible returns over time.
+                        </p>
+                        <a href="/investment-projection" class="btn tool-btn">Try Tool</a>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-
 
 
 
