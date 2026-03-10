@@ -23,3 +23,33 @@ window.addEventListener("scroll", () => {
 
 
 
+/* ===================================== */
+/* ACCOUNT DROPDOWN ARROW BEHAVIOUR      */
+/* ===================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const accountDropdown = document.querySelector(".account-dropdown");
+    const accountBtn = document.querySelector(".account-dropdown-toggle");
+    const accountMenu = document.querySelector(".account-menu");
+
+    if (!accountDropdown || !accountBtn || !accountMenu) return;
+
+    accountDropdown.addEventListener("show.bs.dropdown", function () {
+        accountBtn.classList.add("arrow-up");
+
+        accountMenu.classList.remove("dropdown-animate-out");
+
+        requestAnimationFrame(() => {
+            accountMenu.classList.add("dropdown-animate-in");
+        });
+    });
+
+    accountDropdown.addEventListener("hide.bs.dropdown", function () {
+        accountBtn.classList.remove("arrow-up");
+
+        accountMenu.classList.remove("dropdown-animate-in");
+        accountMenu.classList.add("dropdown-animate-out");
+    });
+
+});

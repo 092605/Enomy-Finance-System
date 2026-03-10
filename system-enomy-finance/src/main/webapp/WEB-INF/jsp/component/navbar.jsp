@@ -38,10 +38,24 @@
                         Savings and Investment
                     </a>
                 </li>
+                
+                
+                <!-- ACCOUNT BUTTON  -->
 
-                <li class="nav-item ms-lg-2">
-                    <a class="btn btn-glow" href="/login">Account</a>
-                </li>
+                <li class="nav-item dropdown ms-lg-2 account-dropdown">
+				    <a class="btn btn-glow account-dropdown-toggle"
+					   href="#"
+					   role="button"
+					   data-bs-toggle="dropdown"
+					   aria-expanded="false">
+					    Account
+					</a>
+									
+				    <ul class="dropdown-menu dropdown-menu-end account-menu">
+				        <li><a class="dropdown-item account-item" href="/login">Login</a></li>
+				        <li><a class="dropdown-item account-item" href="/signup">Sign Up</a></li>
+				    </ul>
+				</li>
 
             </ul>
 
