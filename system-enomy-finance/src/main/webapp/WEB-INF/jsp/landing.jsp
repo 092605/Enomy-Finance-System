@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="/css/theme.css">
 <link rel="stylesheet" href="/css/landing.css">
 <link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="/css/footer.css">
 
 </head>
 
@@ -420,6 +421,12 @@
         </div>
     </div>
 </section>
+
+
+
+
+<!-- FOOTER  -->
+<jsp:include page="/WEB-INF/jsp/component/footer.jsp"/>
 
 
 

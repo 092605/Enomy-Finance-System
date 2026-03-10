@@ -819,7 +819,7 @@
 
 .why-item{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     padding: 1.2rem 1.2rem;
     background: rgba(255,255,255,0.04);
@@ -839,17 +839,24 @@
 }
 
 .why-icon{
-    width: 42px;
+       width: 42px;
     height: 42px;
     min-width: 42px;
+
     border-radius: 12px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     background: var(--gradient-primary);
     color: #fff;
+
     font-size: 1.1rem;
     font-weight: 700;
+
+    line-height: 1;
+
     box-shadow: 0 0 16px rgba(255,77,166,0.20);
 }
 
@@ -1101,7 +1108,7 @@
 
 @media (max-width: 991px){
     .start-managing-section{
-        padding: 70px 0;
+        padding: 20px;
     }
 
     .start-content{
@@ -1121,6 +1128,13 @@
     .start-form-card{
         margin-top: 0.5rem;
     }
+    
+    .start-badge{
+    display: none;
+    
+}
+    
+  
 }
 
 @media (max-width: 767px){
