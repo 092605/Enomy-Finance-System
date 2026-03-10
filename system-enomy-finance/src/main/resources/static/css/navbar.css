@@ -1,0 +1,256 @@
+/* ========================================= */
+/* LANDING PAGE NAVBAR                       */
+/* ========================================= */
+
+
+
+
+/* NAVBAR BEHAVIOUR */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    transition: transform 0.3s ease;
+}
+
+.navbar-hide{
+    transform: translateY(-120%);
+}
+
+
+/* NAVBAR BEHAVIOUR */
+
+
+
+
+
+
+
+
+.navbar-glass{
+    background: rgba(5,7,15,0.45);
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border-radius: 22px;
+}
+
+
+/* Brand Logo*/
+
+
+  .brand-glow{
+    color: var(--text-main);
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+}  
+
+.brand-glow::after{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 2px;
+
+    background: var(--gradient-primary);
+
+    transition: width 0.5s ease;
+}
+
+.brand-glow:hover::after{
+    width: 100%;
+    box-shadow: 0 0 8px rgba(255,45,170,0.6);
+}
+
+.brand-glow:hover{
+    color: var(--accent-primary);
+}
+
+
+/* Navbar Link */
+
+
+
+.nav-link-glass{
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link-glass::after{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 2px;
+
+    background: var(--gradient-primary);
+
+    transition: width 0.5s ease;
+}
+
+.nav-link-glass:hover::after{
+    width: 100%;
+    box-shadow: 0 0 8px rgba(255,45,170,0.6);
+}
+
+
+.nav-link-glass:hover{
+    color: var(--accent-primary);
+}
+
+
+
+/* Navbar Link Active */
+
+
+.nav-link.nav-link-glass.active{
+    color: var(--text-main);
+}
+
+.nav-link.nav-link-glass.active::after{
+    width: 100%;
+    box-shadow: 0 0 8px rgba(255,45,170,0.6);
+}
+
+
+
+
+
+
+/* Account Button */
+
+
+.account-btn{
+    background: var(xry);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.account-btn:hover{
+    color: #ffffff;
+    opacity: 0.92;
+}
+
+/* ===================================== */
+/* MOBILE TOGGLE BUTTON                  */
+/* ===================================== */
+
+.custom-toggler{
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+}
+
+.custom-toggler:hover{
+    border-color: rgba(255,45,170,0.35);
+    box-shadow: 0 0 16px rgba(255,45,170,0.15);
+}
+
+.custom-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+/* remove bootstrap default icon */
+.custom-toggler .navbar-toggler-icon{
+    display: none;
+}
+
+/* custom hamburger lines */
+.toggle-lines{
+    width: 22px;
+    height: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggle-lines span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.75);
+    transition: all 0.3s ease;
+}
+
+/* hover effect on lines */
+.custom-toggler:hover .toggle-lines span{
+    background: #ffffff;
+}
+
+/* when menu is open */
+.custom-toggler[aria-expanded="true"] .toggle-lines span:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+.custom-toggler[aria-expanded="true"] .toggle-lines span:nth-child(2){
+    opacity: 0;
+}
+
+.custom-toggler[aria-expanded="true"] .toggle-lines span:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+
+
+
+
+@media (max-width: 991.98px){
+
+    .navbar-collapse{
+        margin-top: 16px;
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(8,10,20,0.72);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .navbar-nav{
+        gap: 10px;
+    }
+
+    .nav-link.nav-link-glass{
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .btn.btn-glow{
+        width: fit-content;
+    }
+}
